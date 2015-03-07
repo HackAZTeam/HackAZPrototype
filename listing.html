@@ -5,10 +5,11 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link href = "css/bootstrap.min.css" rel = "stylesheet">
                 <link href = "css/listing.css" rel = "stylesheet">
+                <link href="SocialMedia.css" medio="screen" rel="stylesheet" type="text/css"/>
         </head>
-        <body>
+        <body background = "Assets/Background.png">
                 <div class = "navbar navbar-inverse navbar-static-top">
-                 <?php for ($x = 0; $x < 2; $x++) { ?>
+                
                         <div class = "container">
                                
                                 <a href = "#" class = "navbar-brand">Book Trade Site</a>
@@ -49,31 +50,20 @@
                                 
 
                                 </div>
-                                <div id='title<?php echo $x; ?>'></div>
-                                <div id='descriptions<?php echo $x; ?>'></div>
-                                <div id='price<?php echo $x; ?>'></div>
+                                
                         </div>
-                        <?php } ?>
+                       
                 </div>
-                <center><img src = "Assets/Background.png" id ="fsbg" height="1024"></center>
+                <div id="modal">
+                  <header><h1>Engineering</h1></header>
+                  <section>
+                    <p>CSE 110 Intro to Java Programming</p>
+                    <p>Status: <b>Good</b></p>
+                    <p>$22.00</p>
+                    <img src = "Assets/CSE110.png"></a>
+                  </section>
+                </div>
                 <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <script src = "js/bootstrap.js"></script>
-                <script>
-                //Create mimic backend JSON code
-
-                mimicBack = {
-                        'titles': ["CSE 110 Principles of Programming","CSE 205 Object Oriented Principles","MAT265 Calculus for Engineers I"],
-                        'descriptions': ["New","Good","Fair"],
-                        'price': ["$50.00","$21.00","$34.00"],
-                };
-
-                //referencing JSON object in jquery
-                for(x=0; x<mimicBack.titles.length; x++)
-                {
-                        $("#title" + x).html(mimicBack.titles[x]);
-                        $("#descriptions" + x).html(mimicBack.descriptions[x]);
-                        $("#price" + x).html(mimicBack.price[x]);
-                }
-                </script>       
          </body>
 </html>
