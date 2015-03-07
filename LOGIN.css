@@ -75,13 +75,11 @@ select{
     padding-bottom: 13px;
     font-size: 10px;
     text-align: center;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-top: #0b0b0b 1px solid;
-    border-bottom: #353535 1px solid;
+    border: none;
     background: #141414 url(http://dev.dhenriquez.com/test-img/icons/54-lock.png) 10px center no-repeat;
     font: 12px Arial;
-    font-color: #bfbfbf;
+    color: #bfbfbf;
+    margin: 10px;
 }
 
 .dropcontainer{
