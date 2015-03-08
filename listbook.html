@@ -6,6 +6,18 @@
                 <link href = "css/bootstrap.min.css" rel = "stylesheet">
                 <link href = "css/listing.css" rel = "stylesheet">
                 <link href="SocialMedia.css" medio="screen" rel="stylesheet" type="text/css"/>
+				<style>
+				table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#submitPosition {
+	position: right;
+	float:right;
+
+}
+
+</style>
         </head>
         <body background = "Assets/Background.png">
                 <div class = "navbar navbar-inverse navbar-static-top">
@@ -48,6 +60,66 @@
                   <section>
 				  <fieldset>
 				  <legend>Title:<input type="text" name ="bookName" placeholder = "Enter a title."></legend>
+				  Price: <input type="text" name = "bookPrice" placeholder ="$"><br><br>
+				  <table>
+				  <tr>
+				  <td>Condition</td>
+				  <td>Description</td>
+				  </tr>
+				  <tr>
+				  <td style="background-color:#4CAF50">Excellent</td> 
+				  <td style="background-color:#4CAF50">A book that does not look new and has been read but is in excellent condition. No obvious
+				  damage to the cover, with the dust jacket (if applicable) included for hard covers. No missing or
+				  damaged pages, no creases or tears, and no underlining/highlighting of text or writing in the margins.
+				  May have very minimal identifying marks on the inside cover. Very minimal wear and tear.</td>
+				  </tr>
+				  <tr>
+				  <td style="background-color:lightgreen">Good</td>
+				  <td style="background-color:lightgreen">A book that has been read but is in good condition. Very minimal damage to the cover including
+				  scuff marks, but no holes or tears. The dust jacket for hard covers may not be included. Binding has
+				  minimal wear. The majority of pages are undamaged with minimal creasing or tearing, minimal pencil 
+				  underlining of text, no highlighting of text, no writing in margins. No missing pages.</td>
+				  </tr>
+				  <tr>
+				  <td style="background-color:yellow">Fair</td>
+				  <td style="background-color:yellow">A book with obvious wear. May have some damage to the cover but integrity still intact.
+				  The binding may be slightly damaged but integrity is still intact. Possible writing in margins,
+				  possible underlining and highlighting of text, but no missing pages or anything that would compromise
+				  the legibility or understanding of the text.</td>
+				  </tr>
+				  <tr>
+				  <td style="background-color:orange">Poor</td>
+				  <td style="background-color:orange">Front cover and/or back cover may be missing. May have Few missing/damaged pages.
+				  Significant amount of signs of usage such as marks/highlights are in the book.</td>
+				  </tr>
+				  
+				  
+				  
+				  </table>
+				  
+				 
+				  <form>
+				  <h4>
+				  Condition:
+				  
+				  <input type ="radio" name = "condition" value = "conditionFair" required> Excellent 
+				  <input type ="radio" name = "condition" value = "conditionFair" required> Good 
+				  <input type ="radio" name = "condition" value = "conditionFair" required> Fair 
+				  <input type ="radio" name = "condition" value = "conditionBad" required> Poor</h4>
+				  </form>
+				  
+				  
+				  
+				  <br>Description:<br>
+				  <textarea name ="description" rows ="5" cols ="50" placeholder="Please describe more specifically."></textarea><br>
+				  
+				  
+				  <br>Class:<input type = "text" name ="className" placeholder = "CSE101"><br>
+				  
+				  
+				  <br>Picture: <input type = "file" name ="fileName">
+				  <input type ="submit" name ="submitButton" id = "submitPosition" value = "Post"><br>
+				  
 				  </fieldset>
 				  
 				  
