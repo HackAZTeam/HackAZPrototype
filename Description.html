@@ -2,6 +2,10 @@
 <html>
         <head>
                 <title>BookME</title>
+                <link rel="stylesheet" href="css/bootstrap.min.css"/>
+                <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+                <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+                <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link href = "css/bootstrap.min.css" rel = "stylesheet">
                 <link href = "css/listing.css" rel = "stylesheet">
@@ -13,7 +17,7 @@
                 
                         <div class = "container">
                                
-                                <a href = "#" class = "navbar-brand">BookME</a>
+                                <a href = "listing.html" class = "navbar-brand">BookME</a>
                                
                                 <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
                                         <span class = "icon-bar"></span>
@@ -46,15 +50,75 @@
                         </div>
                        
                 </div>
+                <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+                <div id="blueimp-gallery" class="blueimp-gallery">
+                    <!-- The container for the modal slides -->
+                    <div class="slides"></div>
+                    <!-- Controls for the borderless lightbox -->
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                    <div class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body next"></div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default pull-left prev">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                        Previous
+                                    </button>
+                                    <button type="button" class="btn btn-primary next">
+                                        Next
+                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="modal">
                   <header><h1>Michael Stanley 3/02/2015/5:00PM</h1></header>
                   <section>
-                  <img align="Left" src="Assets/CSE110.png"><p id="rightText">CSE 110 Intro to Java Programming<br>Condition: <b>Good</b><br>$22.00</p></img>
+                  <div id="links">
+                    <a href="Assets/CSE110.jpg " title="CSE110" data-gallery>
+                        <img align="Left" src="Assets/CSE110.png" alt="CSE110" id="rightText">
+                    </a>
+                </div>
+                CSE 110 Intro to Java Programming<br>Condition: <b>Good</b><br>$22.00</p><br></br><br></br>
                   </section>
                 </div>
                  
 
-                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-                <script src = "js/bootstrap.js"></script>
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+                <script src="js/bootstrap-image-gallery.min.js"></script>
+                <script type="text/javascript" src="js/query-1.11.0.min.js"></script>
+                <script type="text/javascript" src="js/bootstrap.min.js"></script>
+                <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+                <script>
+                blueimp.Gallery(
+                    document.getElementById('links').getElementsByTagName('a'),
+                    {
+                        container: '#blueimp-gallery-carousel',
+                        carousel: true
+                    }
+                );
+                </script>
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src="js/blueimp-gallery.js"></script>
+                <script src="js/blueimp-gallery-fullscreen.js"></script>
+                <script src="js/blueimp-gallery-indicator.js"></script>
+                <script src="js/blueimp-gallery-video.js"></script>
+                <script src="js/blueimp-gallery-youtube.js"></script>
+                <script src="js/blueimp-gallery-vimeo.js"></script>
+                <script src="js/jquery.blueimp-gallery.js"></script>
          </body>
 </html>
