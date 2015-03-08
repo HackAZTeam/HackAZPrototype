@@ -31,12 +31,17 @@
     line-height: 175%;
     color: #333;
     background: #F0F0F0;
-    text-align: right;
   }
 
-  #shiftLeft
+  #rightText
   {
-    margin-align: left;
+    text-align: right;
+    line-height:325%;
+  }
+
+  #rightImage
+  {
+    margin:top;
   }
 
   p{
