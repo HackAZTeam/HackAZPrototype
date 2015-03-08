@@ -7,8 +7,9 @@
                 <link href = "css/listing.css" rel = "stylesheet">
                 <link href="SocialMedia.css" medio="screen" rel="stylesheet" type="text/css"/>
         </head>
-        <body background="Assets/Background.png">
+        <body background = "Assets/Background.png">
                 <div class = "navbar navbar-inverse navbar-static-top">
+                
                         <div class = "container">
                                
                                 <a href = "#" class = "navbar-brand">BookME</a>
@@ -31,39 +32,32 @@
                                        
                                                 <li><a href = "#">Home</a></li>
                                                 <li><a href = "#">About</a></li>
-                                                <li><a href = "#">Sell Books</a></li>
+                                                <li class = "active"><a href = "#">Sell Books</a></li>
                                                 <li><a href = "#">Contact</a></li>
-												<li  class = "active"><a href = "#">Social Media</a></li>
-                                                
+                                                                             
                                         </ul>
+                                
+
                                 </div>
+                                
                         </div>
+                       
                 </div>
                 <div id="modal">
-                  <header><h1>Social Media</h1></header>
+                  <header><h1>Sell a book</h1></header>
                   <section>
-                    <p>Like us on Facebook!</p>
-                   <iframe
-    src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/groups/1605108979721358/"
-    scrolling="no" frameborder="0"
-    style="border:none; width:450px; height:55px">
-</iframe>
-                    <br></br>
-                    <p>Follow us on Twitter!</p>
-                    <iframe
-  src="https://platform.twitter.com/widgets/follow_button.html?screen_name=twitterBookMe"
-  style="border:none; width: 300px; height: 20px;"
-  
-  frameborder="0"
-  scrolling="no">
-</iframe>
-                    <br></br>
-                    <p>Add us on Google+!</p>
-                    <iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;hl=en-US&amp;url=http://test.com/&amp;parent=http://test.com/" allowtransparency="true" frameborder="0" scrolling="no" title="+1"></iframe>
-                    <br></br>
+				  <fieldset>
+				  <legend>Title:<input type="text" name ="bookName" placeholder = "Enter a title."></legend>
+				  </fieldset>
+				  
+				  
+				  
+                  
                   </section>
                 </div>
+                 
+
                 <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-                <script src = "js/bootstrap.js"></script> 
+                <script src = "js/bootstrap.js"></script>
          </body>
 </html>
